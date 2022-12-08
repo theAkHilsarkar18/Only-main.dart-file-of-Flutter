@@ -1,0 +1,51 @@
+// Shine text editing
+
+// import 'package:flutter/material.dart';
+//
+// void main()
+// {
+//   runApp(
+//       MaterialApp(
+//         debugShowCheckedModeBanner: false,
+//         home: Scaffold(
+//           appBar: AppBar(
+//             backgroundColor: Colors.white,
+//             shape: Border(bottom:
+//             BorderSide(
+//               color: Colors.black,
+//               style: BorderStyle.solid,
+//             )
+//             ),
+//             centerTitle: true,
+//             title: Text("Shine App", style: TextStyle(
+//               fontSize: 30,
+//               color: Colors.white,
+//               shadows: [Shadow(
+//                 color: Colors.black,
+//                 blurRadius: 10 ,
+//                 offset: Offset(-10,5),
+//               ),
+//               ],
+//             )),
+//           ),
+//           backgroundColor: Colors.white,
+//           body:
+//           Center(
+//             child: Text("Shine",
+//                 style: TextStyle(
+//                   fontSize: 81,
+//                   color: Colors.white,
+//                   shadows: [Shadow(
+//                     color: Colors.black,
+//                     blurRadius: 20 ,
+//                     offset: Offset(10,10),
+//                   ),
+//                   ],
+//                 )
+//             ),
+//           ),
+//         ),
+//       )
+//   );
+// }
+//
