@@ -12,9 +12,9 @@ void main()
           child: Text.rich(
             TextSpan(
               children: [
-                TextSpan(text: "Styling text in Flutter\n",style: TextStyle(color: Colors.red,fontSize: 50 , fontWeight: FontWeight.bold , height: 2),),
-                TextSpan(text: "    Styling text in Flutter\n",style: TextStyle(color: Colors.amber,fontSize: 40 , fontWeight: FontWeight.bold , height: 2),),
-                TextSpan(text: "            Styling text in Flutter\n",style: TextStyle(color: Colors.blueAccent,fontSize: 30 , fontWeight: FontWeight.bold , height: 2),),
+                TextSpan(text: "Styling text in Flutter\n",style: TextStyle(color: Color.fromRGBO(500, 0, 0, 1000),fontSize: 50 , fontWeight: FontWeight.bold , height: 2),),
+                TextSpan(text: "    Styling text in Flutter\n",style: TextStyle(color: Color.fromRGBO(500, 100, 0, 430),fontSize: 40 , fontWeight: FontWeight.bold , height: 2),),
+                TextSpan(text: "            Styling text in Flutter\n",style: TextStyle(color: Color.fromRGBO(0, 0, 500, 380),fontSize: 30 , fontWeight: FontWeight.bold , height: 2),),
                 TextSpan(text: "                            Styling text in Flutter\n",style: TextStyle(color: Colors.green,fontSize: 20 , fontWeight: FontWeight.bold , height: 2),),
                 TextSpan(text: "                                                                             Styling text in Flutter\n",style: TextStyle(color: Colors.purple,fontSize: 10 , fontWeight: FontWeight.bold , height: 2),),
               ]
@@ -25,4 +25,6 @@ void main()
     )
   );
 }
+
+
 
