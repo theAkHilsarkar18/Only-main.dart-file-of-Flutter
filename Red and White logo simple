@@ -1,0 +1,29 @@
+//red and white logo
+
+import 'package:flutter/material.dart';
+
+void main()
+{
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.amber,
+          centerTitle: true,
+          title: Text("Flutter App",style:TextStyle(color: Colors.black)),
+          leading: Icon(Icons.menu , color: Colors.black),
+        ),
+        body:
+        Center(
+          child:
+          Text("Red and White" ,style: TextStyle(color: Colors.red , fontSize: 50, decoration: TextDecoration.underline),
+        ),
+      ),
+        backgroundColor: Colors.black,
+    ),
+  )
+  );
+}
+
+
