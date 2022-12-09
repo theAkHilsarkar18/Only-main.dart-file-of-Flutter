@@ -24,13 +24,19 @@ void main() {
         ),
       )),
       body: Center(
-        child: Text("🍎 Apple\n🍇 Greps\n🍒 Cherry\n🍓 Strawberry\n🥭 Mango\n🍍 Pineapple\n🍋 Lemon\n🍉 Watermelon\n🥥 Coconut",
-            style: TextStyle(
-                color: Colors.red ,
-                fontSize: 30 ,
-                fontWeight: FontWeight.bold ,
-                letterSpacing: 2 ,
-                height: 2)
+        child: Text.rich(
+          TextSpan(
+            children: [
+              TextSpan(text: "🍎 Apple\n",style: TextStyle(color: Colors.red,fontSize: 25 , fontWeight: FontWeight.bold, letterSpacing: 2 , height: 2),),
+              TextSpan(text: "🍇 Greps\n",style: TextStyle(color: Colors.purple,fontSize: 25 , fontWeight: FontWeight.bold, letterSpacing: 2 , height: 2),),
+              TextSpan(text: "🍒 Cherry\n",style: TextStyle(color: Colors.redAccent,fontSize: 25 , fontWeight: FontWeight.bold, letterSpacing: 2 , height: 2),),
+              TextSpan(text: "🍓 Strawberry\n",style: TextStyle(color: Colors.pink,fontSize: 25 , fontWeight: FontWeight.bold, letterSpacing: 2 , height: 2),),
+              TextSpan(text: "🥭 Mango\n",style: TextStyle(color: Colors.amber,fontSize: 25 , fontWeight: FontWeight.bold, letterSpacing: 2 , height: 2),),
+              TextSpan(text: "🍍 Pineapple\n",style: TextStyle(color: Colors.green,fontSize: 25 , fontWeight: FontWeight.bold, letterSpacing: 2 , height: 2),),
+              TextSpan(text: "🍋 Lemon\n",style: TextStyle(color: Colors.deepOrangeAccent,fontSize: 25 , fontWeight: FontWeight.bold, letterSpacing: 2 , height: 2),),
+              TextSpan(text: "🥥 Coconut\n",style: TextStyle(color: Colors.black45,fontSize: 25 , fontWeight: FontWeight.bold, letterSpacing: 2 , height: 2),),
+            ],
+          ),
         ),
       ),
     ),
