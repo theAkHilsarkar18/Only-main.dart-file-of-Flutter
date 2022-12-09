@@ -1,0 +1,31 @@
+// rich text use project 2
+
+import 'package:flutter/material.dart';
+
+void main()
+{
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: true,
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blueAccent,
+          centerTitle: true,
+          title: Text("RichText Example"),
+        ),
+        body: Center(
+          child: RichText(
+            text: TextSpan(
+              children: [
+                TextSpan(text: "Single ",style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent ,fontSize: 25),),
+                TextSpan(text: " Line ",style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 25 , backgroundColor: Colors.green),),
+                TextSpan(text: "  Multiple ",style: TextStyle(color: Colors.amber, fontWeight: FontWeight.bold, fontSize: 25 , letterSpacing: 5),),
+                TextSpan(text: " Style ",style: TextStyle(color: Colors.purple, fontWeight: FontWeight.bold, fontSize: 25),),
+              ]
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
