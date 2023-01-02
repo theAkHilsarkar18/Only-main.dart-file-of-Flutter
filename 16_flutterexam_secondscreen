@@ -1,0 +1,588 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_exam/thirScreen.dart';
+
+class Second extends StatefulWidget {
+  const Second({Key? key}) : super(key: key);
+
+  @override
+  State<Second> createState() => _SecondState();
+}
+
+class _SecondState extends State<Second> {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          elevation: 0,
+          backgroundColor: Colors.pink,
+        ),
+        body: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                height: 80,
+                width: 500,
+                decoration: BoxDecoration(
+                    color: Colors.pink,
+                    borderRadius: BorderRadius.only(
+                        bottomRight: Radius.circular(50),
+                        bottomLeft: Radius.circular(50))),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Icon(
+                      Icons.person,
+                      color: Colors.white,
+                      size: 30,
+                    ),
+                    Text("Basket",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontSize: 30,
+                            letterSpacing: 2)),
+                    Icon(
+                      Icons.shopping_basket,
+                      size: 30,
+                      color: Colors.white,
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: 80,
+                width: 450,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(color: Colors.grey, width: 3),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.white24,
+                          blurRadius: 5,
+                          spreadRadius: 5,
+                          offset: Offset(10, 10)),
+                    ]),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text("Total : ",
+                        style: TextStyle(
+                            fontSize: 25,
+                            letterSpacing: 2,
+                            fontWeight: FontWeight.bold)),
+                    Text("\$ 672",
+                        style: TextStyle(
+                            fontSize: 25,
+                            letterSpacing: 2,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.pink)),
+                  ],
+                ),
+              ),
+
+              SingleChildScrollView(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      height: 70,
+                      width: 400,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.white,
+                          border: Border.all(color: Colors.grey, width: 2),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.grey, spreadRadius: 3, blurRadius: 3),
+                          ]),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text("🧋", style: TextStyle(fontSize: 40)),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                "Coffee",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 2),
+                              ),
+                              Text(
+                                "\$ 45",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 2,
+                                    color: Colors.pink),
+                              )
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "-",
+                                  style: TextStyle(
+                                      fontSize: 30, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              Container(
+                                  height: 35,
+                                  width: 35,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border:
+                                      Border.all(color: Colors.grey, width: 3)),
+                                  child: Center(
+                                      child: Text(
+                                        "1",
+                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                      ))),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "+",
+                                  style: TextStyle(
+                                      fontSize: 30, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      height: 70,
+                      width: 400,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.white,
+                          border: Border.all(color: Colors.grey, width: 2),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.grey, spreadRadius: 3, blurRadius: 3),
+                          ]),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text("🍕", style: TextStyle(fontSize: 40)),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                "Pizza",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 2),
+                              ),
+                              Text(
+                                "\$ 85",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 2,
+                                    color: Colors.pink),
+                              )
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "-",
+                                  style: TextStyle(
+                                      fontSize: 30, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              Container(
+                                  height: 35,
+                                  width: 35,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border:
+                                      Border.all(color: Colors.grey, width: 3)),
+                                  child: Center(
+                                      child: Text(
+                                        "1",
+                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                      ))),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "+",
+                                  style: TextStyle(
+                                      fontSize: 30, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      height: 70,
+                      width: 400,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.white,
+                          border: Border.all(color: Colors.grey, width: 2),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.grey, spreadRadius: 3, blurRadius: 3),
+                          ]),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text("🥣", style: TextStyle(fontSize: 40)),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                "Soup",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 2),
+                              ),
+                              Text(
+                                "\$ 36",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 2,
+                                    color: Colors.pink),
+                              )
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "-",
+                                  style: TextStyle(
+                                      fontSize: 30, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              Container(
+                                  height: 35,
+                                  width: 35,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border:
+                                      Border.all(color: Colors.grey, width: 3)),
+                                  child: Center(
+                                      child: Text(
+                                        "1",
+                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                      ))),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "+",
+                                  style: TextStyle(
+                                      fontSize: 30, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      height: 70,
+                      width: 400,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.white,
+                          border: Border.all(color: Colors.grey, width: 2),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.grey, spreadRadius: 3, blurRadius: 3),
+                          ]),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text("🧋", style: TextStyle(fontSize: 40)),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                "Coffee",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 2),
+                              ),
+                              Text(
+                                "\$ 45",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 2,
+                                    color: Colors.pink),
+                              )
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "-",
+                                  style: TextStyle(
+                                      fontSize: 30, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              Container(
+                                  height: 35,
+                                  width: 35,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border:
+                                      Border.all(color: Colors.grey, width: 3)),
+                                  child: Center(
+                                      child: Text(
+                                        "1",
+                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                      ))),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "+",
+                                  style: TextStyle(
+                                      fontSize: 30, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      height: 70,
+                      width: 400,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.white,
+                          border: Border.all(color: Colors.grey, width: 2),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.grey, spreadRadius: 3, blurRadius: 3),
+                          ]),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text("🧋", style: TextStyle(fontSize: 40)),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                "Coffee",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 2),
+                              ),
+                              Text(
+                                "\$ 45",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 2,
+                                    color: Colors.pink),
+                              )
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "-",
+                                  style: TextStyle(
+                                      fontSize: 30, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              Container(
+                                  height: 35,
+                                  width: 35,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border:
+                                      Border.all(color: Colors.grey, width: 3)),
+                                  child: Center(
+                                      child: Text(
+                                        "1",
+                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                      ))),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "+",
+                                  style: TextStyle(
+                                      fontSize: 30, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      height: 70,
+                      width: 400,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.white,
+                          border: Border.all(color: Colors.grey, width: 2),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.grey, spreadRadius: 3, blurRadius: 3),
+                          ]),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text("🧋", style: TextStyle(fontSize: 40)),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                "Coffee",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 2),
+                              ),
+                              Text(
+                                "\$ 45",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 2,
+                                    color: Colors.pink),
+                              )
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "-",
+                                  style: TextStyle(
+                                      fontSize: 30, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              Container(
+                                  height: 35,
+                                  width: 35,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border:
+                                      Border.all(color: Colors.grey, width: 3)),
+                                  child: Center(
+                                      child: Text(
+                                        "1",
+                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                      ))),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "+",
+                                  style: TextStyle(
+                                      fontSize: 30, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+
+                  ],
+                ),
+              ),
+
+
+
+              //
+              //
+              //
+              //
+              //
+              //
+              //
+              //
+
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                height: 80,
+                width: 500,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(
+                        color: Colors.grey, width: 2, style: BorderStyle.solid),
+                    borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(18),
+                        topLeft: Radius.circular(18))),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(Icons.home,color: Colors.grey,size: 30,),
+                    Icon(Icons.shopping_basket,color: Colors.grey,size: 30,),
+                    Icon(Icons.person,color: Colors.pink,size: 50,),
+                    InkWell(onTap: () {
+                      setState(() {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Third(),));
+                      });
+                    },child: Icon(Icons.settings,color: Colors.grey,size: 30,)),
+                    Icon(Icons.menu,color: Colors.grey,size: 30,),
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
