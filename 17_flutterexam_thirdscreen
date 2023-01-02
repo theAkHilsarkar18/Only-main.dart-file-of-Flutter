@@ -1,0 +1,112 @@
+import 'package:flutter/material.dart';
+
+class Third extends StatefulWidget {
+  const Third({Key? key}) : super(key: key);
+
+  @override
+  State<Third> createState() => _ThirdState();
+}
+
+class _ThirdState extends State<Third> {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          elevation: 0,
+          backgroundColor: Colors.pink,
+        ),
+        body: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                height: 80,
+                width: 500,
+                decoration: BoxDecoration(
+                    color: Colors.pink,
+                    borderRadius: BorderRadius.only(
+                        bottomRight: Radius.circular(50),
+                        bottomLeft: Radius.circular(50))),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    SizedBox(width: 30,),
+                    Icon(
+                      Icons.person,
+                      color: Colors.white,
+                      size: 30,
+                    ),
+                    SizedBox(width: 30,),
+
+                    Text("Name",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 25,
+                            letterSpacing: 2)),
+                    SizedBox(width: 250,),
+
+                    Icon(
+                      Icons.shopping_basket,
+                      size: 40,
+                      color: Colors.white,
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+
+              Container(),
+
+
+
+              //
+              //
+              //
+              //
+              //
+              //
+              //
+              //
+
+              SizedBox(
+                height: 20,
+              ),
+              Align(
+                alignment: Alignment.bottomCenter,
+                child: Container(
+                  alignment: Alignment.bottomCenter,
+                  height: 80,
+                  width: 500,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(
+                          color: Colors.grey, width: 2, style: BorderStyle.solid),
+                      borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(18),
+                          topLeft: Radius.circular(18))),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Icon(Icons.home,color: Colors.grey,size: 30,),
+                      Icon(Icons.shopping_basket,color: Colors.grey,size: 30,),
+                      Icon(Icons.person,color: Colors.pink,size: 50,),
+                      InkWell(onTap: () {
+                        setState(() {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Third(),));
+                        });
+                      },child: Icon(Icons.settings,color: Colors.grey,size: 30,)),
+                      Icon(Icons.menu,color: Colors.grey,size: 30,),
+                    ],
+                  ),
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
